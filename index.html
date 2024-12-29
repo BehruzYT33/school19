@@ -3,25 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой Первый Сайт</title>
+    <title>Технический перерыв</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffcc00; /* Яркий фон */
+            color: #333;
             text-align: center;
             margin: 0;
-            padding: 20px;
-            background-color: #f0f0f0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: backgroundAnimation 10s infinite alternate;
         }
+
+        @keyframes backgroundAnimation {
+            0% { background-color: #ffcc00; }
+            50% { background-color: #ff6600; }
+            100% { background-color: #ffcc00; }
+        }
+
         h1 {
-            color: #007bff;
+            font-size: 3em;
+            color: #d80000; /* Яркий красный для заголовка */
+            margin: 0;
+            animation: bounce 1s infinite;
         }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-30px); }
+            60% { transform: translateY(-15px); }
+        }
+
         p {
-            font-size: 18px;
+            font-size: 1.5em;
+            color: #003366; /* Темно-синий для текста */
+            margin: 20px 0;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .icon {
+            font-size: 5em;
+            color: #ff6600; /* Яркий оранжевый для иконки */
+            animation: spin 2s infinite linear;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 1em;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <h1>Добро пожаловать на мой сайт!</h1>
-    <p>Это мой первый веб-сайт, сделанный своими руками.</p>
+    <div class="icon">⚙️</div>
+    <h1>Технический перерыв!</h1>
+    <p>Мы работаем над улучшениями.</p>
+    <p>Пожалуйста, оставайтесь с нами!</p>
+    <div class="footer">Спасибо за ваше терпение!</div>
 </body>
 </html>
