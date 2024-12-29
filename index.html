@@ -3,80 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Технический перерыв</title>
+    <title>Школа Бехруза 🏫</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #ffcc00; /* Яркий фон */
-            color: #333;
-            text-align: center;
             margin: 0;
             padding: 0;
-            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #74b9ff, #a29bfe);
+            color: #fff;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            animation: backgroundAnimation 10s infinite alternate;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
         }
-
-        @keyframes backgroundAnimation {
-            0% { background-color: #ffcc00; }
-            50% { background-color: #ff6600; }
-            100% { background-color: #ffcc00; }
-        }
-
         h1 {
-            font-size: 3em;
-            color: #d80000; /* Яркий красный для заголовка */
-            margin: 0;
-            animation: bounce 1s infinite;
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            animation: fadeIn 2s ease-in-out infinite alternate;
         }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-30px); }
-            60% { transform: translateY(-15px); }
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #ffeaa7;
         }
-
         p {
-            font-size: 1.5em;
-            color: #003366; /* Темно-синий для текста */
-            margin: 20px 0;
-            opacity: 0;
-            animation: fadeIn 2s forwards;
-            animation-delay: 1s;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 1rem 0;
         }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        a {
+            color: #00cec9;
+            text-decoration: none;
+            font-weight: bold;
         }
-
-        .icon {
-            font-size: 5em;
-            color: #ff6600; /* Яркий оранжевый для иконки */
-            animation: spin 2s infinite linear;
+        a:hover {
+            color: #81ecec;
         }
-
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+        .button {
+            margin-top: 2rem;
+            padding: 0.8rem 2rem;
+            background: #0984e3;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            color: #fff;
+            cursor: pointer;
+            animation: buttonGlow 1.5s infinite ease-in-out;
         }
-
-        .footer {
+        .button:hover {
+            background: #6c5ce7;
+        }
+        footer {
             position: absolute;
-            bottom: 20px;
-            font-size: 1em;
-            color: #666;
+            bottom: 10px;
+            font-size: 0.8rem;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0.7; transform: scale(1); }
+            100% { opacity: 1; transform: scale(1.05); }
+        }
+        @keyframes buttonGlow {
+            0% { box-shadow: 0 0 10px #00cec9; }
+            100% { box-shadow: 0 0 20px #81ecec; }
         }
     </style>
 </head>
 <body>
-    <div class="icon">⚙️</div>
-    <h1>Технический перерыв!</h1>
-    <p>Мы работаем над улучшениями.</p>
-    <p>Пожалуйста, оставайтесь с нами!</p>
-    <div class="footer">Спасибо за ваше терпение!</div>
+    <h1>Школа Бехруза 🏫✨</h1>
+    <h2>Директор: Ахмедов Бехруз 👨‍🏫</h2>
+    <p>Добро пожаловать в нашу школу! 🌟</p>
+    <p>Наша система: <strong>АИС ОНЛАЙН 📚</strong></p>
+    <p>🖐 Если хотите работать в нашей школе, мы будем рады сотрудничеству.  
+       😊 Вместе мы будем радоваться успехам!</p>
+    <p>🔥 Не забывайте, наша школа — топовое место! 🏆</p>
+    <p>Мы планируем подключать другие журналы, такие как <strong>Дневник.ру 🖥</strong> или <strong>Кунделик 📖</strong>.</p>
+    <p>📩 Связаться с нами можно через Telegram: <a href="https://t.me/behruz_ahmedovb" target="_blank">https://t.me/behruz_ahmedovb</a></p>
+    <button class="button" onclick="alert('Спасибо за интерес к нашей школе! 🎉')">Узнать больше ✨</button>
+    <footer>&copy; 2024 Школа Бехруза. Все права защищены. 🚀</footer>
 </body>
 </html>
+
+  
