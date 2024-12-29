@@ -8,7 +8,7 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #74b9ff, #a29bfe);
             color: #fff;
             display: flex;
@@ -17,56 +17,68 @@
             justify-content: center;
             min-height: 100vh;
             text-align: center;
+            transition: background-color 0.3s ease;
         }
         h1 {
             font-size: 3.5rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
             animation: fadeIn 2s ease-in-out infinite alternate;
+            letter-spacing: 2px;
         }
         h2 {
             font-size: 1.5rem;
             margin-bottom: 2rem;
             color: #ffeaa7;
+            font-weight: 600;
         }
         p {
             font-size: 1.2rem;
             line-height: 1.6;
             margin: 1rem 0;
+            max-width: 80%;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
         }
         a {
             color: #00cec9;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s ease;
         }
         a:hover {
             color: #81ecec;
         }
         .button {
             margin-top: 2rem;
-            padding: 0.8rem 2rem;
+            padding: 1rem 2.5rem;
             background: #0984e3;
             border: none;
-            border-radius: 5px;
-            font-size: 1.2rem;
+            border-radius: 25px;
+            font-size: 1.3rem;
             color: #fff;
             cursor: pointer;
-            animation: buttonGlow 1.5s infinite ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease, transform 0.2s ease-in-out;
         }
         .button:hover {
             background: #6c5ce7;
+            transform: scale(1.05);
         }
         footer {
             position: absolute;
             bottom: 10px;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
+            color: #dfe6e9;
+        }
+        footer a {
+            color: #00cec9;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #81ecec;
         }
         @keyframes fadeIn {
             0% { opacity: 0.7; transform: scale(1); }
             100% { opacity: 1; transform: scale(1.05); }
-        }
-        @keyframes buttonGlow {
-            0% { box-shadow: 0 0 10px #00cec9; }
-            100% { box-shadow: 0 0 20px #81ecec; }
         }
     </style>
 </head>
@@ -81,8 +93,6 @@
     <p>Мы планируем подключать другие журналы, такие как <strong>Дневник.ру 🖥</strong> или <strong>Кунделик 📖</strong>.</p>
     <p>📩 Связаться с нами можно через Telegram: <a href="https://t.me/behruz_ahmedovb" target="_blank">https://t.me/behruz_ahmedovb</a></p>
     <button class="button" onclick="alert('Спасибо за интерес к нашей школе! 🎉')">Узнать больше ✨</button>
-    <footer>&copy; 2024 Школа Бехруза. Все права защищены. 🚀</footer>
+    <footer>&copy; 2024 Школа Бехруза. Все права защищены. 🚀 | <a href="https://t.me/behruz_ahmedovb" target="_blank">Связаться с нами</a></footer>
 </body>
 </html>
-
-  
